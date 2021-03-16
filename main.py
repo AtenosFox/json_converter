@@ -1,4 +1,5 @@
-print("Hello World!")
-a = 1
-b = "a"
-c = False
+def dispayPerson(*args):
+    for i in args:
+        print(i)
+
+dispayPerson(name="Emma", age="25")
