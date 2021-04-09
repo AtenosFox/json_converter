@@ -1,0 +1,5 @@
+<message name="doRegisterRequest">
+   <part name="email" type="xsd:string"/>
+   <part name="name" type="xsd:string"/>
+   <part name="password" type="xsd:string"/>
+</message>
