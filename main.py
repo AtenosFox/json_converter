@@ -12,7 +12,7 @@ if __name__ == "__main__":
     result = head + '\n' + root_open + '\n'
 
     for key in read_json:
-        node = f'\t<{key}>' + f'{read_json[key]}' + f'</{key}>'
+        node = f'\t<{key}>' + f'{read_gjson[key]}' + f'</{key}>'
         result += f'\t{node}\n'
 
     with open('file/result.xml', 'w') as f:

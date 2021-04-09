@@ -3,6 +3,5 @@
 		<orderID>12345</orderID>
 		<shopperName>John Smith</shopperName>
 		<shopperEmail>johnsmith@example.com</shopperEmail>
-		<contents>[{'productID': 34, 'productName': 'SuperWidget', 'quantity': 1}, {'productID': 56, 'productName': 'WonderWidget', 'quantity': 3}]</contents>
 		<orderCompleted>True</orderCompleted>
 </root>
