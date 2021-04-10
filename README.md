@@ -1,4 +1,4 @@
-# json_converter
+# json_to_xml_converter
 ### This script convert a .json file to .xml
 * Add .json data in `file/data.json`
 * Run `python main.py`
