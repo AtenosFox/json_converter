@@ -1,17 +1,28 @@
 def json_to_xml(json_data):
-    result = ''
+    result: str = ''
 
     for key in json_data:
-        print(type(json_data[key]))
-        if type(json_data[key]) == list:
-            for x in json_data[key]:
-                result += '<contents>\n'
-                result += json_to_xml(x)
-                result += '</contents>\n'
+        if isinstance(json_data[key], dict):
+            list_data = [json_data[key]]
+            json_data[key] = list_data
+            if isinstance(json_data[key], list):
+                for x in json_data[key]:
+                    result += f'<{key}>\n'
+                    result += json_to_xml(x)
+                    result += f'</{key}>\n'
+            else:
+                node = f'<{key}> {json_data[key]} </{key}>'
+                result += f'{node}\n'
 
         else:
-            node = f'<{key}>' + f'{json_data[key]}' + f'</{key}>'
-            result += f'{node}\n'
+            if isinstance(json_data[key], list):
+                for x in json_data[key]:
+                    result += f'<{key}>\n'
+                    result += json_to_xml(x)
+                    result += f'</{key}>\n'
+            else:
+                node = f'<{key}> {json_data[key]} </{key}>'
+                result += f'{node}\n'
     return result
 
 def pretify_xml(xml_data):

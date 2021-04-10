@@ -4,7 +4,6 @@ import utils
 if __name__ == "__main__":
     with open('file/data.json') as f:
         json_data = json.load(f)
-    print(json_data)
     head = '<?xml version="1.0" encoding="UTF-8" ?>'
     root_open = '<root>'
     root_close = '</root>'

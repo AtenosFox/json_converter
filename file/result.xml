@@ -1,17 +1,22 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <root>
-	<orderID>12345</orderID>
-	<shopperName>John Smith</shopperName>
-	<shopperEmail>johnsmith@example.com</shopperEmail>
-	<contents>
-		<productID>34</productID>
-		<productName>SuperWidget</productName>
-		<quantity>1</quantity>
-	</contents>
-	<contents>
-		<productID>56</productID>
-		<productName>WonderWidget</productName>
-		<quantity>3</quantity>
-	</contents>
-	<orderCompleted>True</orderCompleted>
+	<Comment> My comment </Comment>
+	<Count> 10 </Count>
+	<DiskParam>
+		<DB> 10.0 </DB>
+		<DBAngle> 1.234 </DBAngle>
+	</DiskParam>
+	<Range> 1 </Range>
+	<Blades>
+		<Caption> A </Caption>
+		<Value> 65 </Value>
+	</Blades>
+	<Blades>
+		<Caption> B </Caption>
+		<Value> 66 </Value>
+	</Blades>
+	<Blades>
+		<Caption> C </Caption>
+		<Value> 67 </Value>
+	</Blades>
 </root>
